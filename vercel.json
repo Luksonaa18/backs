@@ -2,17 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.ts",
+      "src": "dist/index.js",
       "use": "@vercel/node",
-      "config": {
-        "runtime": "nodejs18.x"
-      }
+      "config": { "includeFiles": ["dist/**"] }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/index.ts"
+      "dest": "dist/index.js"
     }
   ]
 }

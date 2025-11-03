@@ -8,7 +8,10 @@ import type { Handler } from 'aws-lambda';
 const expressApp = express();
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, new ExpressAdapter(expressApp));
+  const app = await NestFactory.create(
+    AppModule,
+    new ExpressAdapter(expressApp),
+  );
   await app.init();
 }
 
