@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CartSchema = exports.Cart = exports.CartItem = void 0;
 const mongoose_1 = require("@nestjs/mongoose");
 const mongoose_2 = require("mongoose");
-const products_schema_1 = require("../../products/schema/products.schema");
+const products_schema_1 = require("src/products/schema/products.schema");
 class CartItem {
 }
 exports.CartItem = CartItem;

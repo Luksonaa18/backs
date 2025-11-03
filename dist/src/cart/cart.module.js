@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 const cart_service_1 = require("./cart.service");
 const mongoose_1 = require("@nestjs/mongoose");
 const cart_schema_1 = require("./schema/cart.schema");
-const products_schema_1 = require("../products/schema/products.schema");
+const products_schema_1 = require("src/products/schema/products.schema");
 let CartModule = class CartModule {
 };
 exports.CartModule = CartModule;

@@ -35,7 +35,7 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = require("mongoose");
 const bcrypt = __importStar(require("bcrypt"));
-const auth_schema_1 = require("./src/auth/schema/auth.schema");
+const auth_schema_1 = require("src/auth/schema/auth.schema");
 async function createAdmin() {
     await (0, mongoose_1.connect)('mongodb://localhost:27017/eccomerce');
     const UserModel = (0, mongoose_1.model)('User', auth_schema_1.UserSchema);

@@ -17,7 +17,7 @@ const common_1 = require("@nestjs/common");
 const mongoose_1 = require("@nestjs/mongoose");
 const mongoose_2 = require("mongoose");
 const cart_schema_1 = require("./schema/cart.schema");
-const products_schema_1 = require("../products/schema/products.schema");
+const products_schema_1 = require("src/products/schema/products.schema");
 let CartService = class CartService {
     constructor(cartModel, productModel) {
         this.cartModel = cartModel;

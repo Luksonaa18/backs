@@ -16,3 +16,4 @@ async function bootstrap() {
 }
 bootstrap();
 exports.handler = (0, serverless_express_1.default)({ app: expressApp });
+//# sourceMappingURL=index.js.map

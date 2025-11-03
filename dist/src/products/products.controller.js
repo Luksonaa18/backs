@@ -16,12 +16,12 @@ exports.ProductsController = void 0;
 const common_1 = require("@nestjs/common");
 const products_service_1 = require("./products.service");
 const jwt_guard_1 = require("../auth/guards/jwt.guard");
-const role_decorator_1 = require("../auth/decorator/role.decorator");
-const role_guard_1 = require("../auth/guards/role.guard");
+const role_decorator_1 = require("src/auth/decorator/role.decorator");
+const role_guard_1 = require("src/auth/guards/role.guard");
 const platform_express_1 = require("@nestjs/platform-express");
 const create_product_dto_1 = require("./dto/create-product.dto");
 const update_product_dto_1 = require("./dto/update-product.dto");
-const aws_service_1 = require("../aws/aws.service");
+const aws_service_1 = require("src/aws/aws.service");
 let ProductsController = class ProductsController {
     constructor(productsService, awsService) {
         this.productsService = productsService;

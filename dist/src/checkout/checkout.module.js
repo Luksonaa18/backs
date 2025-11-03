@@ -10,7 +10,7 @@ exports.CheckoutModule = void 0;
 const common_1 = require("@nestjs/common");
 const checkout_controller_1 = require("./checkout.controller");
 const checkout_service_1 = require("./checkout.service");
-const email_module_1 = require("../email/email.module");
+const email_module_1 = require("src/email/email.module");
 let CheckoutModule = class CheckoutModule {
 };
 exports.CheckoutModule = CheckoutModule;
