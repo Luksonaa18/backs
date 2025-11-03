@@ -2,15 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.ts",
+      "src": "api/index.ts",
       "use": "@vercel/node",
-      "config": { "maxLambdaSize": "50mb" }
+      "config": {
+        "runtime": "nodejs18.x"
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.ts"
+      "dest": "api/index.ts"
     }
   ]
 }
+
